@@ -17,8 +17,6 @@ namespace Shooter
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            Circle c = new Circle("", new Point(100, 100), 10, System.Drawing.Color.Blue);
-            
         }
     }
 }

@@ -16,5 +16,18 @@ namespace Shooter
         {
             InitializeComponent();
         }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            this.g.FillPie(Brushes.AliceBlue, new Rectangle(0, 0, 100, 100), 20, 100);
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            this.g = this.CreateGraphics();
+        }
+
+        Graphics g;
+
     }
 }
